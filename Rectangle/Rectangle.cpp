@@ -53,6 +53,7 @@ int main()
                 }
             }
             rad = sqrt(point1.x * point1.x + point1.y * point1.y);
+            cout << "Значение радиуса окружности = " << rad << "\n";
             point3.x = -1 * point1.x;
             point3.y = -1 * point1.y;
             tf = true;
