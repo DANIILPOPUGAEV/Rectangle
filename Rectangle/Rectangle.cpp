@@ -76,25 +76,29 @@ int main()
             point4.y = -1 * point2.y;
             cout << row;
             cout << setiosflags(ios::left) << setw(5) << "|" << setiosflags(ios::left)
-                << setw(35) << "Координаты вершин прямоугольника:" << setiosflags(ios::left) << setw(2) << "|";
+                << setw(35) << "Координаты вершин прямоугольника" << setiosflags(ios::left) << setw(2) << "|";
             cout << endl;
             cout << row;
             cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
                 << setw(10) << "X" << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << "Y"
                 << setiosflags(ios::left) << setw(10) << "|";
             cout << endl;
+            cout << row;
             cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
                 << setw(10) << point1.x << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << point1.y
                 << setiosflags(ios::left) << setw(10) << "|";
             cout << endl;
+            cout << row;
             cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
                 << setw(10) << point2.x << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << point2.y
                 << setiosflags(ios::left) << setw(10) << "|";
             cout << endl;
+            cout << row;
             cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
                 << setw(10) << point3.x << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << point3.y
                 << setiosflags(ios::left) << setw(10) << "|";
             cout << endl;
+            cout << row;
             cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
                 << setw(10) << point4.x << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << point4.y
                 << setiosflags(ios::left) << setw(10) << "|";
