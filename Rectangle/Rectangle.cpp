@@ -30,19 +30,20 @@ int main()
     char operation;
     double storona1; double storona2; double rad; double gipotenuza; double square;
     bool menu = true; bool tf = true;
+    string row = "+---------------------------------------+\n";
     while (menu)
     {
         system("CLS");
         tf = true;
         cout << "Выберете номер операции\n" << "1. Составить прямоугольник.\n" << "2. Закрыть программу.\n";
         cin >> operation;
+        system("CLS");
         switch (operation)
         {
         case '1': 
             while (tf)
             {
                 tf = false;
-                system("CLS");
                 cout << "Введите координаты точки для прямоугольника:\n";
                 cin >> point1.x;
                 cin >> point1.y;
@@ -73,18 +74,33 @@ int main()
             point2.y = sqrt(rad * rad - point2.x * point2.x);
             point4.x = -1 * point2.x;
             point4.y = -1 * point2.y;
-            cout << "Координаты вершин прямоугольника:\n";
-            cout << setiosflags(ios::left) << setw(15) << "X" << setiosflags(ios::left) << setw(15) << "Y";
+            cout << row;
+            cout << setiosflags(ios::left) << setw(5) << "|" << setiosflags(ios::left)
+                << setw(35) << "Координаты вершин прямоугольника:" << setiosflags(ios::left) << setw(2) << "|";
             cout << endl;
-            cout << setiosflags(ios::left) << setw(15) << point1.x << setiosflags(ios::left) << setw(15) << point1.y;
+            cout << row;
+            cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
+                << setw(10) << "X" << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << "Y"
+                << setiosflags(ios::left) << setw(10) << "|";
             cout << endl;
-            cout << setiosflags(ios::left) << setw(15) << point2.x << setiosflags(ios::left) << setw(15) << point2.y;
+            cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
+                << setw(10) << point1.x << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << point1.y
+                << setiosflags(ios::left) << setw(10) << "|";
             cout << endl;
-            cout << setiosflags(ios::left) << setw(15) << point3.x << setiosflags(ios::left) << setw(15) << point3.y;
+            cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
+                << setw(10) << point2.x << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << point2.y
+                << setiosflags(ios::left) << setw(10) << "|";
             cout << endl;
-            cout << setiosflags(ios::left) << setw(15) << point4.x << setiosflags(ios::left) << setw(15) << point4.y;
+            cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
+                << setw(10) << point3.x << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << point3.y
+                << setiosflags(ios::left) << setw(10) << "|";
             cout << endl;
-
+            cout << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left)
+                << setw(10) << point4.x << setiosflags(ios::left) << setw(10) << "|" << setiosflags(ios::left) << setw(10) << point4.y
+                << setiosflags(ios::left) << setw(10) << "|";
+            cout << endl;
+            cout << row;
+            cout << endl;
             storona1 = DlinaStoroni(point2.x, point1.x, point2.y, point1.y);
             cout << "Длина первого катета = " << storona1 << "\n";
             storona2 = DlinaStoroni(point2.x, point3.x, point2.y, point3.y);
